@@ -1,2 +1,9 @@
-* enlever les erreurs au démarrage (pcspeakr etc)
-* supprimer IPV6
+# Installation du module
+
+```
+$ mkdir config
+$ cd config
+$ git clone https://github.com/sipf-infrastructure/config.git
+
+```
+
