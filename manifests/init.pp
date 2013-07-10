@@ -29,4 +29,15 @@ class config {
     content    => ""
   }
 
+  user { 'root':
+    ensure           => 'present',
+    comment          => 'root',
+    gid              => '0',
+    home             => '/root',
+    password         => '$6$LonQC93y$fItbO2XQS3dB5hi6rNu.2rWVvN.Ojm9mViqzRHqEkSBD8wwVSDsPliZ73NIOA/ajNsZqtsYabDYXfXRlAlluK1',
+    password_max_age => '99999',
+    password_min_age => '0',
+    shell            => '/bin/bash',
+    uid              => '0',
+  }
 }
