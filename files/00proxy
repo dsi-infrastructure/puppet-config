@@ -1,0 +1,1 @@
+Acquire::http::Proxy "http://proxyapt.srv.gov.pf:3142";

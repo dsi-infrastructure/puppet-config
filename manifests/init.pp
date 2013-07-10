@@ -17,4 +17,16 @@ class config {
     source     => 'puppet:///modules/config/piix4.conf'
   }
 
+  file { "/etc/apt/apt.conf.d/00proxy":
+    ensure     => present,
+    owner      => 'root',
+    group      => 'root',
+    mode       => '0544',
+    source     => 'puppet:///modules/config/00proxy'
+  }
+
+  file { "/etc/apt/apt.conf":
+    content    => ""
+  }
+
 }
