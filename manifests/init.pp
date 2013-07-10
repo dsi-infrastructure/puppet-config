@@ -6,7 +6,7 @@ class config {
     owner      => 'root',
     group      => 'root',
     mode       => '0544',
-    source     => 'puppet:///modules/defaultconf/pcspkr.conf'
+    source     => 'puppet:///modules/config/pcspkr.conf'
   }
 
   file { "/etc/modprobe.d/piix4.conf":
@@ -14,7 +14,7 @@ class config {
     owner      => 'root',
     group      => 'root',
     mode       => '0544',
-    source     => 'puppet:///modules/defaultconf/piix4.conf'
+    source     => 'puppet:///modules/config/piix4.conf'
   }
 
 }
