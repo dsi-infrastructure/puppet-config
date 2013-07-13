@@ -17,6 +17,14 @@ class config {
     source     => 'puppet:///modules/config/piix4.conf'
   }
 
+	file { "/etc/sysctl.d/disableipv6.conf":
+		ensure     => present,
+		owner      => 'root',
+		group      => 'root',
+		mode       => '0544',
+		source     => 'puppet:///modules/config/disableipv6.conf'
+	}
+
   file { "/etc/apt/apt.conf.d/00proxy":
     ensure     => present,
     owner      => 'root',
