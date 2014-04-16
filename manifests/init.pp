@@ -35,11 +35,6 @@ class config {
     source     => 'puppet:///modules/config/00proxy'
   }
 
-  file { '/etc/apt/apt.conf':
-    ensure     => present,
-    content    => ''
-  }
-
   user { 'root':
     ensure           => present,
     comment          => 'root',
